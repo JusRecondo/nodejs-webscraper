@@ -31,6 +31,10 @@ app.get("/api/text", async (req, res) => {
     }
 })
 
+app.get('/test', (req, res) => {
+    res.send('Hello World!')
+  })
+
 app.listen(port, () => {
     console.log(`Running on port ${port}`);
 })
